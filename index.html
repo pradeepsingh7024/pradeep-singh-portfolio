@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PraDeeP SinGH - A web developer showcasing projects, skills, and experience. Specializing in HTML, CSS, JavaScript, and more."
+    />
+    <meta
+      name="keywords"
+      content="PraDeeP SinGH, web developer, portfolio, HTML, CSS, JavaScript, projects, resume"
+    />
+    <meta name="author" content="PraDeeP SinGH" />
+    <meta
+      property="og:title"
+      content="PraDeeP SinGH - Web Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Explore PraDeeP SinGH's web development projects, skills, and experience."
+    />
+    <meta property="og:image" content="path/to/your-image.jpg" />
+    <!-- Add an image for social sharing -->
+    <meta property="og:url" content="https://www.your-portfolio-link.com" />
+
+    <title>PraDeeP SinGH...</title>
+    <link rel="icon" href="eyesdp.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.10.1/tsparticles.confetti.bundle.min.js"></script>
+  </head>
+  <body>
+    <a href="#" id="backToTop" class="text-decoration-none">
+      <i class="bi bi-arrow-up-circle-fill"></i>
+    </a>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand"
+          ><img src="pradeepsingh.png" width="230px" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="bi bi-house"></i> Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">
+                <i class="bi bi-person"></i> About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">
+                <i class="bi bi-briefcase"></i> Projects
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#skill">
+                <i class="bi bi-code-slash"></i> Skill
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Education">
+                <i class="bi bi-mortarboard"></i> Education
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/pradeepsingh7024">
+                <i class="bi bi-github"></i> Github
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                <i class="bi bi-telephone"></i> Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main1 container">
+      <div class="main11">
+        <div class="main2 container" onclick="fire()">
+          <h3 style="font-size: 2.3rem">
+            Hello, It's Me
+            <span
+              class="wave"
+              role="img"
+              aria-labelledby="wave"
+              onclick="fire()"
+              >👋🏻</span
+            >
+          </h3>
+          <h1 style="font-size: 4rem; color: rgb(158, 122, 25)">
+            Pradeep Singh
+          </h1>
+          <p id="app" style="font-size: 2rem">Full-Stack Python Developer</p>
+          <p style="font-size: 1.2rem">
+            Building powerful and scalable web applications with Python and
+            Django. Let’s turn your ideas into reality.
+          </p>
+
+          <div class="hero-icon">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-whatsapp"></i>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="hero.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="about-main">
+      <h1
+        class="intro text-center"
+        style="font-weight: 900; color: rgb(158, 122, 25); margin-top: 120px"
+      >
+        About Me
+      </h1>
+      <div class="about container" id="about">
+        <div class="about-para">
+          <p>
+            I fell in love with programming and i have at least learnt
+            something.I think...🤷‍♀️
+          </p>
+          <p>
+            i am fluent in classics like
+            <b class="co">
+              HTML,CSS ,C++ , Javascript, MySQL, Python , Django and
+              Django-restframework.</b
+            >
+          </p>
+          <p>
+            My field of Interest's are building new
+            <b class="co"> Web Technologies and Products</b> and also in areas
+            related to
+            <b class="co">Database.</b>
+          </p>
+          <p>
+            Whenever possible, I also apply my passion for developing products
+            with <b class="co"> Node.js</b> and
+            <b class="co"> Modern Javascript Library and Frameworks </b> like
+            <b class="co"> React.js and Next.js</b>
+          </p>
+          <p class="text-center">
+            <button class="btn btn-primary">
+              <a
+                href="pradeep-singh.pdf"
+                download="pradeep-singh.pdf"
+                class="text-decoration-none text-light"
+              >
+                Download CV</a
+              >
+            </button>
+          </p>
+        </div>
+
+        <div class="about-img">
+          <img src="about-img.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <section class="skills-section container" id="skill">
+        <div class="wave-background"></div>
+        <div class="text-center">
+          <h2
+            class="skills-title text-center"
+            style="font-weight: 900; color: rgb(158, 122, 25)"
+          >
+            My Skills
+          </h2>
+          <div class="row justify-content-center">
+            <!-- Skill 1 -->
+
+            <div
+              class="col-6 col-sm-4 skill-item text-center skill-box"
+              id="skill-box"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                alt="MySQL"
+                class="skill-icon"
+              />
+
+              <p>MySql</p>
+            </div>
+
+            <!-- Skill 4 -->
+            <div class="col-6 col-sm-4 skill-item text-center skill-box" id="">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                alt="Python"
+                class="skill-icon"
+              />
+
+              <p>Python</p>
+            </div>
+            <!-- Skill 5 -->
+            <div class="col-6 col-sm-4 skill-item text-center skill-box">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+                class="skill-icon"
+              />
+              <p>JavaScript</p>
+            </div>
+            <!-- Skill 6 -->
+            <div class="col-6 col-sm-4 skill-item text-center skill-box">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS"
+                class="skill-icon"
+              />
+              <p>CSS</p>
+            </div>
+
+            <!-- Skill 7 -->
+            <div class="col-6 col-sm-4 skill-item text-center skill-box">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                alt="Bootstrap"
+                class="skill-icon"
+              />
+              <p>Bootstrap</p>
+            </div>
+            <!-- Skill 8 -->
+            <div class="col-6 col-sm-4 skill-item text-center skill-box">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                alt="Django"
+                class="skill-icon"
+              />
+
+              <p>Django</p>
+            </div>
+            <!-- Skill 9 -->
+            <div class="col-6 col-sm-4 skill-item text-center skill-box">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML5"
+                class="skill-icon"
+              />
+              <p>HTML5</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Education section-->
+    <div class="container" id="Education">
+      <h1
+        class="text-center"
+        style="font-weight: 900; color: rgb(158, 122, 25)"
+      >
+        Education & Experience
+      </h1>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-briefcase"></i>
+            <!-- Experience icon -->
+          </div>
+          <div class="timeline-content">
+            <h3>Dec 2024 – Mar 2025</h3>
+            <h4>Internship (Django Developer) – Ideal IT Techno, Indore</h4>
+            <p>
+              Completed a 3-month internship focusing on Django and Django REST
+              Framework. Developed and integrated RESTful API endpoints for
+              real-world projects. Worked on user authentication, data
+              serialization, and API security. Gained hands-on experience with
+              backend logic, database design, and API documentation.
+              Collaborated with a development team to deliver scalable and
+              maintainable solutions.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>Dec-May 2024</h3>
+            <h4>Internship(django-develper)</h4>
+            <p>
+              Gained hands-on experience in developing and maintaining web
+              applications using Django. Worked on building dynamic,
+              database-driven websites, implementing RESTful APIs, and ensuring
+              responsive design and performance optimization. Collaborated with
+              a team to solve real-world problems, enhancing both backend and
+              frontend skills. .
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>2021-2023</h3>
+            <h4>MCA(sage university indore)</h4>
+            <p>
+              In-depth knowledge of software development, data structures,
+              algorithms, and computer systems. Developed strong programming,
+              problem-solving, and analytical skills through practical projects
+              and coursework.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>2017-2020</h3>
+            <h4>Bsc(computer science)(APSU rewa)</h4>
+            <p>
+              Solid foundation in computer science fundamentals, including
+              programming, databases, and algorithms. Gained practical
+              experience in software development, networking, and system
+              architecture through hands-on projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- project section  -->
+
+    <div class="projects container" id="projects">
+      <h1
+        class="text-center"
+        style="font-weight: 900; color: rgb(158, 122, 25); margin-bottom: 30px"
+      >
+        My projects
+      </h1>
+      <div
+        class="d-flex flex-wrap gap-4 justify-content-center pt-lg-5"
+        style=""
+      >
+        <div class="card1">
+          <div class="card-inner">
+            <div class="card-front">
+              <img
+                src="https://cdn.hackersandslackers.com/2020/11/django-views.jpg"
+                alt=""
+              />
+              <i>Django CRUD</i>
+            </div>
+            <div class="card-back">
+              <h5>
+                <a href="#" style="text-decoration: none; color: white"
+                  >TAXI booking</a
+                >
+              </h5>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat similar structure for other cards -->
+        <div class="card1">
+          <div class="card-inner">
+            <div class="card-front">
+              <img
+                src="https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3BvdGlmeXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                alt=""
+              />
+              <i>Spotify clone </i>
+            </div>
+            <div class="card-back">
+              <h3>
+                <a href="#" style="text-decoration: none; color: white"
+                  >Spotify clone</a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat similar structure for other cards -->
+        <div class="card1">
+          <div class="card-inner">
+            <div class="card-front">
+              <img
+                src="https://media.istockphoto.com/id/1335050734/photo/businessman-using-a-computer-for-property-sales-listings-real-estate-agent-agency-contractor.jpg?s=612x612&w=0&k=20&c=-QsLOTTjONcvkhAJQWjsXHjeRXnInmclCZIjRt3wE20="
+                alt=""
+              />
+              <i>Book Store</i>
+            </div>
+            <div class="card-back">
+              <h3>
+                <a href="#" style="text-decoration: none; color: white"
+                  >Book Store</a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat similar structure for other cards -->
+        <div class="card1">
+          <div class="card-inner">
+            <div class="card-front">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQot6TlNJU_KdNHQQWW-Rci4vpN61cQ1v09Ng&usqp=CAU"
+                alt=""
+              />
+              <i>Speack to text</i>
+            </div>
+            <div class="card-back">
+              <h3>
+                <a href="#" style="text-decoration: none; color: white"
+                  >speck to text</a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat similar structure for other cards -->
+        <div class="card1">
+          <div class="card-inner">
+            <div class="card-front">
+              <img
+                src="https://t3.ftcdn.net/jpg/03/01/43/92/360_F_301439209_vpF837oCGM1lp0cnC7stzCBn3th0dQ6O.jpg"
+                alt=""
+              />
+              <i>Music player</i>
+            </div>
+            <div class="card-back">
+              <h3>
+                <a href="#" style="text-decoration: none; color: white"
+                  >Music player</a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat similar structure for other cards -->
+        <div class="card1">
+          <div class="card-inner">
+            <div class="card-front">
+              <img
+                src="https://www.eklavvya.com/blog/wp-content/uploads/2022/04/Question-Paper-Generation-Software-and-technology.png"
+                alt=""
+              /><i>Question paper</i>
+            </div>
+            <div class="card-back">
+              <h3>
+                <a href="#" style="text-decoration: none; color: white"
+                  >Question paper</a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat similar structure for other cards -->
+        <div class="card1">
+          <div class="card-inner">
+            <div class="card-front">
+              <img
+                src="https://images.tute.io/media/topics/thumbnails/django-rest-framework-892.png"
+                alt=""
+               
+              /><i>Rest api</i>
+            </div>
+            <div class="card-back">
+              <h3>
+                <a href="#" style="text-decoration: none; color: white"
+                  >Crud api</a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat similar structure for other cards -->
+      </div>
+    </div>
+    <!-- contact us section starts  -->
+    <section class="contact container" id="contact">
+      <h2
+        class="contactTitle text-center"
+        style="font-weight: 900; color: rgb(158, 122, 25)"
+      >
+        Contact Me
+      </h2>
+      <div class="contactUs">
+        <div class="contact-box">
+          <div class="left contactLeft">
+            <img
+              src="contact-img.jpeg"
+              class="contact-img"
+              alt=""
+              width="150px "
+            />
+
+            <div class="contact-info">
+              <p><i class="bi bi-telephone-fill"></i> +91-7024094276</p>
+              <p>
+                <i class="bi bi-envelope-fill"> </i>pradeepsingh42211@gmail.com
+              </p>
+              <p><i class="bi bi-geo-alt-fill"></i> Rewa(M.P), India</p>
+            </div>
+            <span class="p-2">
+              If you have any queries at all, please feel free to reach out and
+              I'll gladly answer them.
+            </span>
+
+            <p class="contact-content">Thanks for visiting .</p>
+          </div>
+          <div class="right contactRight">
+            <h2 class="contacth2">Lets Connect</h2>
+            <!--<form
+              id="form"
+              method="POST"
+              action="https://formspree.io/f/mqazvvpj"
+          > -->
+            <form action="https://api.web3forms.com/submit" method="post">
+              <input
+                type="hidden"
+                name="access_key"
+                id=""
+                value="6bf9b41b-217a-417d-ba43-34195761d765"
+              />
+              <input
+                type="text"
+                class="field contactField"
+                name="name"
+                placeholder="Enter your Full Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                class="field contactField"
+                placeholder="Enter your Email"
+                required
+              />
+              <input
+                type="text"
+                class="field contactField"
+                name="contact"
+                placeholder="Enter your Phone Number"
+              />
+              <textarea
+                name="msg"
+                placeholder="Suggestions/Queries"
+                class="field contactField contactTextarea"
+                required
+              ></textarea>
+              <button id="form-button" class="btn contactBtn" type="submit">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends -->
+
+    <footer class="footer">
+      <div class="text-center">
+        <!-- Footer Title -->
+        <div class="col-12 mb-3">
+          <h3 class="mb-2">
+            Designed and Developed by <strong>PraDeeP SinGH</strong>
+          </h3>
+          <p>&copy; 2023</p>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-12 mb-3">
+          <p>
+            Contact:
+            <a href="mailto:pradeepsingh42211@gmail.com" class="text-dark"
+              >pradeepsingh@gmail.com</a
+            >
+          </p>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="col-12">
+          <div class="social-icons d-flex justify-content-center">
+            <a
+              href="https://github.com/Rakselsaheb"
+              target="_blank"
+              class="text-light mx-2"
+            >
+              <i class="bi bi-github" style="font-size: 30px"></i>
+            </a>
+            <a
+              href="https://twitter.com/explore"
+              target="_blank"
+              class="text-light mx-2"
+            >
+              <i class="bi bi-twitter" style="font-size: 30px"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/pradeep-singh-51a21a236"
+              target="_blank"
+              class="text-light mx-2"
+            >
+              <i class="bi bi-linkedin" style="font-size: 30px"></i>
+            </a>
+            <a
+              href="https://instagram.com/tpsrr__?igshid=ZGUzMzM3NWJiOQ=="
+              target="_blank"
+              class="mx-2"
+            >
+              <i class="bi bi-instagram" style="font-size: 30px"></i>
+            </a>
+            <a href="#" class="mx-2">
+              <i class="bi bi-whatsapp" style="font-size: 30px"></i>
+            </a>
+            <a href="#" class="text-light mx-2">
+              <i class="bi bi-youtube" style="font-size: 30px"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Icons CDN (if not included already) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </body>
+  <script>
+    var app = document.getElementById("app");
+
+    var customNodeCreator = function (character) {
+      return document.createTextNode(character);
+    };
+
+    var typewriter = new Typewriter(app, {
+      loop: true,
+      delay: 75,
+      onCreateTextNode: customNodeCreator,
+    });
+
+    typewriter.typeString(" Full-Stack Python Developer").pauseFor(300).start();
+
+    // special effect
+    function fire() {
+      const end = Date.now() + 15 * 1000;
+
+      // go Buckeyes!
+      const colors = ["#bb0000", "#ffffff"];
+
+      (function frame() {
+        confetti({
+          particleCount: 2,
+          angle: 60,
+          spread: 55,
+          origin: { x: 0 },
+          colors: colors,
+        });
+
+        confetti({
+          particleCount: 2,
+          angle: 120,
+          spread: 55,
+          origin: { x: 1 },
+          colors: colors,
+        });
+
+        if (Date.now() < end) {
+          requestAnimationFrame(frame);
+        }
+      })();
+    }
+    // //date functon
+    // let d=new Date();
+    // let date=document.getElementsByClassName("date");
+    // let s= date.innerText=d.getDay()+"-"+d.getMonth()+"-"+d.getFullYear();
+    // console.log(d.getDate());
+    // console.log(d.getMonth());
+    // console.log(d.getFullYear());
+    // console.log(s)
+  </script>
+  <!-- back to top javascripts-->
+  <script>
+    window.onscroll = function () {
+      var backToTopButton = document.getElementById("backToTop");
+      if (
+        document.body.scrollTop > 100 ||
+        document.documentElement.scrollTop > 100
+      ) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    };
+
+    // Scroll to top when the button is clicked
+    document
+      .getElementById("backToTop")
+      .addEventListener("click", function (event) {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</html>
+
