@@ -1,750 +1,1590 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta
       name="description"
-      content="PraDeeP SinGH - A web developer showcasing projects, skills, and experience. Specializing in HTML, CSS, JavaScript, and more."
+      content="Pradeep Singh – Full-Stack Python Developer | Django Expert | Portfolio"
     />
-    <meta
-      name="keywords"
-      content="PraDeeP SinGH, web developer, portfolio, HTML, CSS, JavaScript, projects, resume"
-    />
-    <meta name="author" content="PraDeeP SinGH" />
-    <meta
-      property="og:title"
-      content="PraDeeP SinGH - Web Developer Portfolio"
-    />
-    <meta
-      property="og:description"
-      content="Explore PraDeeP SinGH's web development projects, skills, and experience."
-    />
-    <meta property="og:image" content="path/to/your-image.jpg" />
-    <!-- Add an image for social sharing -->
-    <meta property="og:url" content="https://www.your-portfolio-link.com" />
-
-    <title>PraDeeP SinGH...</title>
-    <link rel="icon" href="eyesdp.jpg" />
+    <meta name="author" content="Pradeep Singh" />
+    <link rel="icon" href="hero.png">
+    <title>Pradeep Singh | Full-Stack Python Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Clash+Display:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
     />
-
     <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.10.1/tsparticles.confetti.bundle.min.js"></script>
+ 
   </head>
   <body>
-    <a href="#" id="backToTop" class="text-decoration-none">
-      <i class="bi bi-arrow-up-circle-fill"></i>
-    </a>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a href="#" class="navbar-brand"
-          ><img src="pradeepsingh.png" width="230px" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="bi bi-house"></i> Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">
-                <i class="bi bi-person"></i> About
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">
-                <i class="bi bi-briefcase"></i> Projects
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#skill">
-                <i class="bi bi-code-slash"></i> Skill
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Education">
-                <i class="bi bi-mortarboard"></i> Education
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/pradeepsingh7024">
-                <i class="bi bi-github"></i> Github
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">
-                <i class="bi bi-telephone"></i> Contact
-              </a>
-            </li>
-          </ul>
-        </div>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="pre-logo">tpsrr__</div>
+      <div class="pre-bar"><div class="pre-fill"></div></div>
+      <div class="pre-code">
+        <span>■</span> launching...
       </div>
+    </div>
+
+    <!-- Cursor -->
+    <div id="cur"></div>
+    <div id="cur-t"></div>
+
+    <!-- Progress -->
+    <div id="prog"></div>
+
+    <!-- Back to top -->
+    <a href="#home" id="btt"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- Toast -->
+    <div id="toast">
+      <i class="bi bi-check-circle-fill"></i
+      ><span>// message_sent: success</span>
+    </div>
+
+    <!-- ====== NAVBAR ====== -->
+    <nav id="nav">
+      <a href="#home" class="nav-logo">tpsrr__</a>
+      <div class="nav-tog" id="tog">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links" id="nl">
+        <li><a href="#home">~home</a></li>
+        <li><a href="#about">~about</a></li>
+        <li><a href="#skill">~skills</a></li>
+        <li><a href="#Education">~exp</a></li>
+        <li><a href="#projects">~work</a></li>
+        <li><a href="#services">~services</a></li>
+        <li><a href="#certifications">~certs</a></li>
+        <li><a href="#contact" class="nav-hire">hire_me()</a></li>
+      </ul>
     </nav>
 
-    <div class="main1 container">
-      <div class="main11">
-        <div class="main2 container" onclick="fire()">
-          <h3 style="font-size: 2.3rem">
-            Hello, It's Me
-            <span
-              class="wave"
-              role="img"
-              aria-labelledby="wave"
-              onclick="fire()"
-              >👋🏻</span
-            >
-          </h3>
-          <h1 style="font-size: 4rem; color: rgb(158, 122, 25)">
-            Pradeep Singh
+    <!-- ====== HERO ====== -->
+    <section id="home">
+      <div class="hero-bg">
+        <div class="hero-grid"></div>
+        <div class="hblob hb1"></div>
+        <div class="hblob hb2"></div>
+        <div class="hblob hb3"></div>
+      </div>
+      <!-- Corner decorations -->
+      <div class="h-corner tl"></div>
+      <div class="h-corner tr"></div>
+      <div class="h-corner bl"></div>
+      <div class="h-corner br"></div>
+
+      <div class="hero-inner">
+        <div>
+          <div class="h-badge">
+            <div class="h-dot"></div>
+            Available for Full-Time Roles
+          </div>
+          <p class="h-hi">// Hello World, I'm</p>
+          <h1 class="h-name">
+            <span class="l1">Pradeep</span><span class="l2">Singh.</span>
           </h1>
-          <p id="app" style="font-size: 2rem">Full-Stack Python Developer</p>
-          <p style="font-size: 1.2rem">
-            Building powerful and scalable web applications with Python and
-            Django. Let’s turn your ideas into reality.
+          <div class="h-role" id="tw"></div>
+          <p class="h-desc">
+            Building powerful, scalable web applications with Python &amp;
+            Django. From RESTful APIs to full-stack solutions — I turn ideas
+            into production-ready digital products.
           </p>
-
-          <div class="hero-icon">
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-twitter"></i>
-            <i class="bi bi-whatsapp"></i>
+          <div class="h-actions">
+            <a href="pradeep-singh.pdf" download class="btn btn-prim"
+              ><i class="bi bi-download"></i>Download CV</a
+            >
+            <a href="#contact" class="btn btn-sec"
+              ><i class="bi bi-terminal"></i>Hire Me</a
+            >
+            <a href="#projects" class="btn btn-ghost">View Work →</a>
+          </div>
+          <div class="h-socials">
+            <a
+              class="h-soc"
+              href="https://github.com/pradeepsingh7024"
+              target="_blank"
+              ><i class="bi bi-github"></i
+            ></a>
+            <a
+              class="h-soc"
+              href="https://www.linkedin.com/in/pradeep-singh-51a21a236"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a
+              class="h-soc"
+              href="https://instagram.com/tpsrr__"
+              target="_blank"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a class="h-soc" href="#"><i class="bi bi-twitter-x"></i></a>
+            <a class="h-soc" href="#"><i class="bi bi-whatsapp"></i></a>
+          </div>
+          <div class="h-stats">
+            <div class="h-stat">
+              <div class="h-stat-n">2+</div>
+              <div class="h-stat-l">Years Exp</div>
+            </div>
+            <div class="h-stat">
+              <div class="h-stat-n">8+</div>
+              <div class="h-stat-l">Projects</div>
+            </div>
+            <div class="h-stat">
+              <div class="h-stat-n">2</div>
+              <div class="h-stat-l">Internships</div>
+            </div>
+            <div class="h-stat">
+              <div class="h-stat-n">10+</div>
+              <div class="h-stat-l">Technologies</div>
+            </div>
           </div>
         </div>
-        <div class="hero-img">
-          <img src="hero.png" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="about-main">
-      <h1
-        class="intro text-center"
-        style="font-weight: 900; color: rgb(158, 122, 25); margin-top: 120px"
-      >
-        About Me
-      </h1>
-      <div class="about container" id="about">
-        <div class="about-para">
-          <p>
-            I fell in love with programming and i have at least learnt
-            something.I think...🤷‍♀️
-          </p>
-          <p>
-            i am fluent in classics like
-            <b class="co">
-              HTML,CSS ,C++ , Javascript, MySQL, Python , Django and
-              Django-restframework.</b
+
+        <div class="h-img-wrap" onclick="fire()">
+          <div class="h-visual">
+            <!-- Rotating SVG ring -->
+            <svg
+              class="h-ring-svg"
+              style="
+                position: absolute;
+                inset: -30px;
+                width: calc(100% + 60px);
+                height: calc(100% + 60px);
+              "
+              viewBox="0 0 420 460"
+              fill="none"
             >
-          </p>
-          <p>
-            My field of Interest's are building new
-            <b class="co"> Web Technologies and Products</b> and also in areas
-            related to
-            <b class="co">Database.</b>
-          </p>
-          <p>
-            Whenever possible, I also apply my passion for developing products
-            with <b class="co"> Node.js</b> and
-            <b class="co"> Modern Javascript Library and Frameworks </b> like
-            <b class="co"> React.js and Next.js</b>
-          </p>
-          <p class="text-center">
-            <button class="btn btn-primary">
-              <a
-                href="pradeep-singh.pdf"
-                download="pradeep-singh.pdf"
-                class="text-decoration-none text-light"
+              <rect
+                x="2"
+                y="2"
+                width="416"
+                height="456"
+                rx="22"
+                stroke="rgba(184,255,53,.15)"
+                stroke-width="1"
+                stroke-dasharray="8 12"
+              />
+              <circle cx="2" cy="230" r="5" fill="#B8FF35" opacity=".6" />
+              <circle cx="418" cy="230" r="5" fill="#B8FF35" opacity=".6" />
+            </svg>
+
+            <div class="h-photo">
+              <img
+                src="hero.png"
+                alt="Pradeep Singh"
+                onerror="this.style.display = 'none'"
+              />
+              <div class="h-photo-overlay"></div>
+              <!-- Fallback icon -->
+              <div
+                style="
+                  position: absolute;
+                  inset: 0;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  z-index: 0;
+                "
               >
-                Download CV</a
-              >
-            </button>
-          </p>
-        </div>
+                <i
+                  class="bi bi-person-bounding-box"
+                  style="font-size: 8rem; color: var(--lime); opacity: 0.05"
+                ></i>
+              </div>
+            </div>
 
-        <div class="about-img">
-          <img src="about-img.png" alt="" />
-        </div>
-      </div>
-    </div>
+            <!-- Bottom left: code chip -->
+            <div class="h-code">
+              <span class="cm"># stack.py</span><br />
+              <span class="kw">class</span>
+              <span class="fn">Developer</span>:<br />
+              &nbsp;&nbsp;stack <span class="kw">=</span> [<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"Django"</span>,<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"Python"</span>,<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"React"</span><br />
+              &nbsp;&nbsp;]
+            </div>
 
-    <div class="container">
-      <section class="skills-section container" id="skill">
-        <div class="wave-background"></div>
-        <div class="text-center">
-          <h2
-            class="skills-title text-center"
-            style="font-weight: 900; color: rgb(158, 122, 25)"
-          >
-            My Skills
-          </h2>
-          <div class="row justify-content-center">
-            <!-- Skill 1 -->
-
+            <!-- Top right chip -->
+            <div class="h-chip" style="top: -14px; right: -24px">
+              <i class="bi bi-code-slash"></i>Python Dev
+            </div>
+            <!-- Mid right chip -->
             <div
-              class="col-6 col-sm-4 skill-item text-center skill-box"
-              id="skill-box"
+              class="h-chip"
+              style="top: 38%; right: -50px; animation-delay: 2s"
             >
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                alt="MySQL"
-                class="skill-icon"
-              />
-
-              <p>MySql</p>
+              <i class="bi bi-server"></i>Django Expert
             </div>
-
-            <!-- Skill 4 -->
-            <div class="col-6 col-sm-4 skill-item text-center skill-box" id="">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                alt="Python"
-                class="skill-icon"
-              />
-
-              <p>Python</p>
-            </div>
-            <!-- Skill 5 -->
-            <div class="col-6 col-sm-4 skill-item text-center skill-box">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                alt="JavaScript"
-                class="skill-icon"
-              />
-              <p>JavaScript</p>
-            </div>
-            <!-- Skill 6 -->
-            <div class="col-6 col-sm-4 skill-item text-center skill-box">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                alt="CSS"
-                class="skill-icon"
-              />
-              <p>CSS</p>
-            </div>
-
-            <!-- Skill 7 -->
-            <div class="col-6 col-sm-4 skill-item text-center skill-box">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                alt="Bootstrap"
-                class="skill-icon"
-              />
-              <p>Bootstrap</p>
-            </div>
-            <!-- Skill 8 -->
-            <div class="col-6 col-sm-4 skill-item text-center skill-box">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
-                alt="Django"
-                class="skill-icon"
-              />
-
-              <p>Django</p>
-            </div>
-            <!-- Skill 9 -->
-            <div class="col-6 col-sm-4 skill-item text-center skill-box">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                alt="HTML5"
-                class="skill-icon"
-              />
-              <p>HTML5</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <!-- Education section-->
-    <div class="container" id="Education">
-      <h1
-        class="text-center"
-        style="font-weight: 900; color: rgb(158, 122, 25)"
-      >
-        Education & Experience
-      </h1>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <i class="fas fa-briefcase"></i>
-            <!-- Experience icon -->
-          </div>
-          <div class="timeline-content">
-            <h3>Dec 2024 – Mar 2025</h3>
-            <h4>Internship (Django Developer) – Ideal IT Techno, Indore</h4>
-            <p>
-              Completed a 3-month internship focusing on Django and Django REST
-              Framework. Developed and integrated RESTful API endpoints for
-              real-world projects. Worked on user authentication, data
-              serialization, and API security. Gained hands-on experience with
-              backend logic, database design, and API documentation.
-              Collaborated with a development team to deliver scalable and
-              maintainable solutions.
-            </p>
-          </div>
-        </div>
-
-        <!-- Timeline Item 1 -->
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <i class="fas fa-heart"></i>
-          </div>
-          <div class="timeline-content">
-            <h3>Dec-May 2024</h3>
-            <h4>Internship(django-develper)</h4>
-            <p>
-              Gained hands-on experience in developing and maintaining web
-              applications using Django. Worked on building dynamic,
-              database-driven websites, implementing RESTful APIs, and ensuring
-              responsive design and performance optimization. Collaborated with
-              a team to solve real-world problems, enhancing both backend and
-              frontend skills. .
-            </p>
-          </div>
-        </div>
-
-        <!-- Timeline Item 2 -->
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <i class="fas fa-code"></i>
-          </div>
-          <div class="timeline-content">
-            <h3>2021-2023</h3>
-            <h4>MCA(sage university indore)</h4>
-            <p>
-              In-depth knowledge of software development, data structures,
-              algorithms, and computer systems. Developed strong programming,
-              problem-solving, and analytical skills through practical projects
-              and coursework.
-            </p>
-          </div>
-        </div>
-
-        <!-- Timeline Item 3 -->
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <i class="fas fa-gamepad"></i>
-          </div>
-          <div class="timeline-content">
-            <h3>2017-2020</h3>
-            <h4>Bsc(computer science)(APSU rewa)</h4>
-            <p>
-              Solid foundation in computer science fundamentals, including
-              programming, databases, and algorithms. Gained practical
-              experience in software development, networking, and system
-              architecture through hands-on projects.
-            </p>
           </div>
         </div>
       </div>
-    </div>
-    <!-- project section  -->
+      <div class="h-scroll">
+        <span>Scroll</span>
+        <div class="h-mouse"><div class="h-mdot"></div></div>
+      </div>
+    </section>
 
-    <div class="projects container" id="projects">
-      <h1
-        class="text-center"
-        style="font-weight: 900; color: rgb(158, 122, 25); margin-bottom: 30px"
-      >
-        My projects
-      </h1>
-      <div
-        class="d-flex flex-wrap gap-4 justify-content-center pt-lg-5"
-        style=""
-      >
-        <div class="card1">
-          <div class="card-inner">
-            <div class="card-front">
+    <!-- ====== MARQUEE ====== -->
+    <div class="marquee-section">
+      <div class="marquee-track" id="mq">
+        <span class="marquee-item"
+          >Python
+          <div class="marquee-dot"></div
+        ></span>
+        <span class="marquee-item"
+          >Django
+          <div class="marquee-dot"></div
+        ></span>
+        <span class="marquee-item"
+          >REST APIs
+          <div class="marquee-dot"></div
+        ></span>
+        <span class="marquee-item"
+          >React.js
+          <div class="marquee-dot"></div
+        ></span>
+        <span class="marquee-item"
+          >MySQL
+          <div class="marquee-dot"></div
+        ></span>
+        <span class="marquee-item"
+          >Full-Stack Dev
+          <div class="marquee-dot"></div
+        ></span>
+        <span class="marquee-item"
+          >JWT Auth
+          <div class="marquee-dot"></div
+        ></span>
+        <span class="marquee-item"
+          >Swagger Docs
+          <div class="marquee-dot"></div
+        ></span>
+        <span class="marquee-item"
+          >Open to Work
+          <div class="marquee-dot"></div
+        ></span>
+        <span class="marquee-item"
+          >Python
+          <div class="marquee-dot"></div
+        ></span>
+        <span class="marquee-item"
+          >Django
+          <div class="marquee-dot"></div
+        ></span>
+        <span class="marquee-item"
+          >REST APIs
+          <div class="marquee-dot"></div
+        ></span>
+        <span class="marquee-item"
+          >React.js
+          <div class="marquee-dot"></div
+        ></span>
+        <span class="marquee-item"
+          >MySQL
+          <div class="marquee-dot"></div
+        ></span>
+        <span class="marquee-item"
+          >Full-Stack Dev
+          <div class="marquee-dot"></div
+        ></span>
+        <span class="marquee-item"
+          >JWT Auth
+          <div class="marquee-dot"></div
+        ></span>
+        <span class="marquee-item"
+          >Swagger Docs
+          <div class="marquee-dot"></div
+        ></span>
+        <span class="marquee-item"
+          >Open to Work
+          <div class="marquee-dot"></div
+        ></span>
+      </div>
+    </div>
+
+    <!-- ====== ABOUT ====== -->
+    <section id="about">
+      <div class="sec-inner">
+        <div class="reveal">
+          <div class="sec-eyebrow">Who I Am</div>
+          <h2 class="sec-title">About <span>Me</span></h2>
+          <p class="sec-sub">
+            A passionate developer who turns complex problems into elegant,
+            scalable solutions.
+          </p>
+        </div>
+        <div class="about-grid">
+          <div class="about-img-side reveal up">
+            <div class="about-imgbox">
+              <img
+                src="about-img.png"
+                alt="Pradeep Singh"
+                onerror="
+                  this.outerHTML =
+                    '<div class=\'placeholder\'><i class=\'bi bi-person-bounding-box\'></i></div>'
+                "
+              />
+            </div>
+            <div class="a-lines"></div>
+            <div class="a-lines2"></div>
+            <div class="a-badge">
+              <div class="a-badge-icon"><i class="bi bi-award-fill"></i></div>
+              <div class="a-badge-text">
+                <strong>MCA Graduate</strong
+                ><span>Sage University, Indore</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-text reveal right">
+            <!-- Terminal widget -->
+            <div class="terminal">
+              <div class="term-bar">
+                <div class="term-dot" style="background: #ff5f57"></div>
+                <div class="term-dot" style="background: #ffbd2e"></div>
+                <div class="term-dot" style="background: #28c840"></div>
+                <span
+                  style="
+                    font-family: &quot;JetBrains Mono&quot;, monospace;
+                    font-size: 0.7rem;
+                    color: var(--muted);
+                    margin-left: 8px;
+                  "
+                  >pradeep@portfolio ~ bash</span
+                >
+              </div>
+              <div class="term-body">
+                <span class="cmd">$ whoami</span><br />
+                <span class="hi"
+                  >→ Pradeep Singh | Full-Stack Python Developer</span
+                ><br />
+                <span class="cmd">$ cat skills.json | grep primary</span><br />
+                <span class="out"
+                  >Django, DRF, Python, React.js, MySQL, JWT</span
+                ><br />
+                <span class="cmd">$ echo $LOCATION</span><br />
+                <span class="out">Rewa, Madhya Pradesh, India</span><br />
+                <span class="cmd">$ git log --oneline</span><br />
+                <span class="out"
+                  >2+ years experience · 8+ projects · 2 internships</span
+                ><br />
+                <span class="cmd">$ status</span><br />
+                <span class="hi">✓ Open to Full-Time Opportunities</span>
+                <span class="cursor-blink">▋</span>
+              </div>
+            </div>
+
+            <p>
+              I'm a <b>Full-Stack Python Developer</b> from Rewa, M.P., India
+              with a deep passion for building scalable backend systems and
+              clean user interfaces.
+            </p>
+            <p>
+              With hands-on experience in
+              <b>Django, Django REST Framework, Python, JavaScript, React.js</b>
+              and <b>MySQL</b>, I've built real-world applications from RESTful
+              APIs to complete web platforms.
+            </p>
+            <p>
+              I completed my <b>MCA from Sage University, Indore</b> and have
+              done two internships as a Django developer, gaining professional
+              experience in API design, backend architecture, and team
+              collaboration.
+            </p>
+            <div class="about-tags">
+              <span class="atag">Python</span><span class="atag">Django</span
+              ><span class="atag">REST APIs</span>
+              <span class="atag">React.js</span><span class="atag">MySQL</span
+              ><span class="atag">JavaScript</span>
+              <span class="atag">Problem Solver</span
+              ><span class="atag">Team Player</span>
+            </div>
+            <div class="about-stats">
+              <div class="as-box">
+                <div class="as-n">2+</div>
+                <div class="as-l">Years Exp</div>
+              </div>
+              <div class="as-box">
+                <div class="as-n">8+</div>
+                <div class="as-l">Projects</div>
+              </div>
+              <div class="as-box">
+                <div class="as-n">2</div>
+                <div class="as-l">Internships</div>
+              </div>
+            </div>
+            <a href="pradeep-singh.pdf" download class="btn btn-prim"
+              ><i class="bi bi-file-earmark-person"></i>Download Resume</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SKILLS ====== -->
+    <section id="skill">
+      <div class="sec-inner">
+        <div class="reveal">
+          <div class="sec-eyebrow">Tech Stack</div>
+          <h2 class="sec-title">My <span>Skills</span></h2>
+          <p class="sec-sub">
+            Technologies and tools I use to build production-grade applications.
+          </p>
+        </div>
+        <div class="filter-bar reveal">
+          <button class="fb active" onclick="fsk('all', this)">All</button>
+          <button class="fb" onclick="fsk('backend', this)">Backend</button>
+          <button class="fb" onclick="fsk('frontend', this)">Frontend</button>
+          <button class="fb" onclick="fsk('database', this)">Database</button>
+          <button class="fb" onclick="fsk('tools', this)">Tools</button>
+        </div>
+        <div class="skills-grid">
+          <div class="sk reveal" data-cat="backend">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+              alt="Python"
+            />
+            <div class="sk-n">Python</div>
+            <div class="sk-lvl">
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+            </div>
+          </div>
+          <div class="sk reveal" data-cat="backend">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+              alt="Django"
+              style="filter: invert(0.7) sepia(1) saturate(2) hue-rotate(80deg)"
+            />
+            <div class="sk-n">Django</div>
+            <div class="sk-lvl">
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+            </div>
+          </div>
+          <div class="sk reveal" data-cat="backend">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+              alt="DRF"
+            />
+            <div class="sk-n">Django REST</div>
+            <div class="sk-lvl">
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd"></div>
+            </div>
+          </div>
+          <div class="sk reveal" data-cat="backend">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+              alt="C++"
+            />
+            <div class="sk-n">C++</div>
+            <div class="sk-lvl">
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd"></div>
+            </div>
+          </div>
+          <div class="sk reveal" data-cat="backend">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              alt="Node.js"
+            />
+            <div class="sk-n">Node.js</div>
+            <div class="sk-lvl">
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd"></div>
+              <div class="sd"></div>
+            </div>
+          </div>
+          <div class="sk reveal" data-cat="frontend">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JS"
+            />
+            <div class="sk-n">JavaScript</div>
+            <div class="sk-lvl">
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd"></div>
+            </div>
+          </div>
+          <div class="sk reveal" data-cat="frontend">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React"
+            />
+            <div class="sk-n">React.js</div>
+            <div class="sk-lvl">
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd"></div>
+              <div class="sd"></div>
+            </div>
+          </div>
+          <div class="sk reveal" data-cat="frontend">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML5"
+            />
+            <div class="sk-n">HTML5</div>
+            <div class="sk-lvl">
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+            </div>
+          </div>
+          <div class="sk reveal" data-cat="frontend">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS3"
+            />
+            <div class="sk-n">CSS3</div>
+            <div class="sk-lvl">
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd"></div>
+            </div>
+          </div>
+          <div class="sk reveal" data-cat="frontend">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+              alt="Bootstrap"
+            />
+            <div class="sk-n">Bootstrap</div>
+            <div class="sk-lvl">
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd"></div>
+            </div>
+          </div>
+          <div class="sk reveal" data-cat="database">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+              alt="MySQL"
+            />
+            <div class="sk-n">MySQL</div>
+            <div class="sk-lvl">
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd"></div>
+            </div>
+          </div>
+          <div class="sk reveal" data-cat="database">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+              alt="SQLite"
+            />
+            <div class="sk-n">SQLite</div>
+            <div class="sk-lvl">
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd"></div>
+            </div>
+          </div>
+          <div class="sk reveal" data-cat="tools">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="Git"
+            />
+            <div class="sk-n">Git</div>
+            <div class="sk-lvl">
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd"></div>
+            </div>
+          </div>
+          <div class="sk reveal" data-cat="tools">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub"
+              style="filter: invert(1)"
+            />
+            <div class="sk-n">GitHub</div>
+            <div class="sk-lvl">
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd"></div>
+            </div>
+          </div>
+          <div class="sk reveal" data-cat="tools">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+              alt="VS Code"
+            />
+            <div class="sk-n">VS Code</div>
+            <div class="sk-lvl">
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+            </div>
+          </div>
+          <div class="sk reveal" data-cat="tools">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+              alt="Linux"
+            />
+            <div class="sk-n">Linux</div>
+            <div class="sk-lvl">
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd on"></div>
+              <div class="sd"></div>
+              <div class="sd"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== EDUCATION & EXPERIENCE ====== -->
+    <section id="Education">
+      <div class="sec-inner">
+        <div class="reveal">
+          <div class="sec-eyebrow">My Journey</div>
+          <h2 class="sec-title">Education &amp; <span>Experience</span></h2>
+          <p class="sec-sub">
+            My professional and academic path that shaped me as a developer.
+          </p>
+        </div>
+        <div class="tl">
+          <div class="tl-item reveal">
+            <div class="tl-dot">
+              <i
+                class="fas fa-briefcase"
+                style="font-size: 0.5rem; color: #000"
+              ></i>
+            </div>
+            <div class="tl-card">
+              <div class="tl-top">
+                <div>
+                  <div class="tl-date">Dec 2024 – Mar 2025</div>
+                  <div class="tl-title">Django Developer Intern</div>
+                  <div class="tl-co">Ideal IT Techno, Indore</div>
+                </div>
+                <span class="badge b-exp">Internship</span>
+              </div>
+              <p class="tl-desc">
+                Completed a 3-month internship focusing on Django and Django
+                REST Framework. Developed and integrated RESTful API endpoints
+                for real-world projects. Worked on user authentication, data
+                serialization, and API security. Gained hands-on experience with
+                backend logic, database design, and API documentation.
+              </p>
+              <div class="tl-tech">
+                <span>Django</span><span>DRF</span><span>Python</span
+                ><span>JWT Auth</span><span>MySQL</span><span>Swagger</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot">
+              <i class="fas fa-code" style="font-size: 0.5rem; color: #000"></i>
+            </div>
+            <div class="tl-card">
+              <div class="tl-top">
+                <div>
+                  <div class="tl-date">Dec 2023 – May 2024</div>
+                  <div class="tl-title">Django Developer Intern</div>
+                  <div class="tl-co">Web Development Company</div>
+                </div>
+                <span class="badge b-exp">Internship</span>
+              </div>
+              <p class="tl-desc">
+                Gained hands-on experience developing and maintaining web
+                applications using Django. Built dynamic database-driven
+                websites, implemented RESTful APIs, and ensured responsive
+                design and performance optimization. Collaborated with a team to
+                solve real-world problems.
+              </p>
+              <div class="tl-tech">
+                <span>Django</span><span>Python</span><span>HTML/CSS</span
+                ><span>JavaScript</span><span>SQLite</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot">
+              <i
+                class="fas fa-graduation-cap"
+                style="font-size: 0.5rem; color: #000"
+              ></i>
+            </div>
+            <div class="tl-card">
+              <div class="tl-top">
+                <div>
+                  <div class="tl-date">2021 – 2023</div>
+                  <div class="tl-title">
+                    Master of Computer Applications (MCA)
+                  </div>
+                  <div class="tl-co">Sage University, Indore</div>
+                </div>
+                <span class="badge b-edu">Master's</span>
+              </div>
+              <p class="tl-desc">
+                In-depth knowledge of software development, data structures,
+                algorithms, and computer systems. Developed strong programming,
+                problem-solving, and analytical skills through practical
+                projects. Specialized in web technologies and database
+                management.
+              </p>
+              <div class="tl-tech">
+                <span>Data Structures</span><span>Algorithms</span
+                ><span>DBMS</span><span>Software Engineering</span
+                ><span>Networking</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot">
+              <i
+                class="fas fa-university"
+                style="font-size: 0.5rem; color: #000"
+              ></i>
+            </div>
+            <div class="tl-card">
+              <div class="tl-top">
+                <div>
+                  <div class="tl-date">2017 – 2020</div>
+                  <div class="tl-title">BSc Computer Science</div>
+                  <div class="tl-co">APSU, Rewa (M.P.)</div>
+                </div>
+                <span class="badge b-edu">Bachelor's</span>
+              </div>
+              <p class="tl-desc">
+                Solid foundation in computer science fundamentals including
+                programming, databases, and algorithms. Gained practical
+                experience in software development, networking, and system
+                architecture through hands-on projects.
+              </p>
+              <div class="tl-tech">
+                <span>C Programming</span><span>C++</span
+                ><span>Mathematics</span><span>Computer Networks</span
+                ><span>OS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== PROJECTS ====== -->
+    <section id="projects">
+      <div class="sec-inner">
+        <div class="reveal">
+          <div class="sec-eyebrow">My Work</div>
+          <h2 class="sec-title">Featured <span>Projects</span></h2>
+          <p class="sec-sub">
+            Real-world applications built with focus on performance,
+            scalability, and design.
+          </p>
+        </div>
+        <div class="filter-bar reveal">
+          <button class="fb active" onclick="fp('all', this)">All</button>
+          <button class="fb" onclick="fp('django', this)">Django</button>
+          <button class="fb" onclick="fp('fullstack', this)">Full-Stack</button>
+          <button class="fb" onclick="fp('api', this)">API</button>
+          <button class="fb" onclick="fp('frontend', this)">Frontend</button>
+        </div>
+        <div class="proj-grid">
+          <div class="pcard feat reveal" data-pc="django fullstack">
+            <div class="pimg">
               <img
                 src="https://cdn.hackersandslackers.com/2020/11/django-views.jpg"
-                alt=""
+                alt="Taxi"
               />
-              <i>Django CRUD</i>
+              <div class="pimg-ov"></div>
             </div>
-            <div class="card-back">
-              <h5>
-                <a href="#" style="text-decoration: none; color: white"
-                  >TAXI booking</a
-                >
-              </h5>
+            <div class="ptags">
+              <span class="ptag">Django</span
+              ><span class="ptag">Full-Stack</span>
+            </div>
+            <span class="pfeat">Featured</span>
+            <div class="pbody">
+              <div class="ptitle">Taxi Booking Platform</div>
+              <p class="pdesc">
+                Full-featured taxi booking system with real-time
+                driver-passenger matching, booking management, admin dashboard,
+                and user authentication built on Django.
+              </p>
+              <div class="pfoot">
+                <div class="ptech">
+                  <span class="pt">Django</span><span class="pt">Python</span
+                  ><span class="pt">MySQL</span><span class="pt">Bootstrap</span
+                  ><span class="pt">JS</span>
+                </div>
+                <div class="plinks">
+                  <a href="#" class="plink"><i class="bi bi-github"></i></a
+                  ><a href="#" class="plink"
+                    ><i class="bi bi-box-arrow-up-right"></i
+                  ></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Repeat similar structure for other cards -->
-        <div class="card1">
-          <div class="card-inner">
-            <div class="card-front">
+
+          <div class="pcard reveal" data-pc="api django">
+            <div class="pimg">
               <img
-                src="https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3BvdGlmeXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
-                alt=""
+                src="https://www.caktusgroup.com/blog/2018/02/26/basics-django-rest-framework/cover-basics-django-rest-framework.png"
+                alt="API"
               />
-              <i>Spotify clone </i>
+              <div class="pimg-ov"></div>
             </div>
-            <div class="card-back">
-              <h3>
-                <a href="#" style="text-decoration: none; color: white"
-                  >Spotify clone</a
-                >
-              </h3>
+            <div class="ptags">
+              <span class="ptag">DRF</span><span class="ptag">API</span>
+            </div>
+            <div class="pbody">
+              <div class="ptitle">Django REST API (CRUD)</div>
+              <p class="pdesc">
+                Fully functional RESTful API with JWT authentication, Swagger
+                documentation, pagination, filtering and comprehensive test
+                coverage.
+              </p>
+              <div class="pfoot">
+                <div class="ptech">
+                  <span class="pt">DRF</span><span class="pt">JWT</span
+                  ><span class="pt">Swagger</span><span class="pt">MySQL</span>
+                </div>
+                <div class="plinks">
+                  <a href="#" class="plink"><i class="bi bi-github"></i></a
+                  ><a href="#" class="plink"
+                    ><i class="bi bi-box-arrow-up-right"></i
+                  ></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Repeat similar structure for other cards -->
-        <div class="card1">
-          <div class="card-inner">
-            <div class="card-front">
+
+          <div class="pcard reveal" data-pc="frontend">
+            <div class="pimg">
               <img
-                src="https://media.istockphoto.com/id/1335050734/photo/businessman-using-a-computer-for-property-sales-listings-real-estate-agent-agency-contractor.jpg?s=612x612&w=0&k=20&c=-QsLOTTjONcvkhAJQWjsXHjeRXnInmclCZIjRt3wE20="
-                alt=""
+                src="https://images.unsplash.com/photo-1611339555312-e607c8352fd7?w=600&q=70"
+                alt="Spotify"
               />
-              <i>Book Store</i>
+              <div class="pimg-ov"></div>
             </div>
-            <div class="card-back">
-              <h3>
-                <a href="#" style="text-decoration: none; color: white"
-                  >Book Store</a
-                >
-              </h3>
+            <div class="ptags"><span class="ptag">Frontend</span></div>
+            <div class="pbody">
+              <div class="ptitle">Spotify Clone</div>
+              <p class="pdesc">
+                Pixel-perfect Spotify UI clone with music player controls,
+                playlist management, responsive layout and smooth CSS
+                animations.
+              </p>
+              <div class="pfoot">
+                <div class="ptech">
+                  <span class="pt">HTML</span><span class="pt">CSS</span
+                  ><span class="pt">JavaScript</span>
+                </div>
+                <div class="plinks">
+                  <a href="#" class="plink"><i class="bi bi-github"></i></a
+                  ><a href="#" class="plink"
+                    ><i class="bi bi-box-arrow-up-right"></i
+                  ></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Repeat similar structure for other cards -->
-        <div class="card1">
-          <div class="card-inner">
-            <div class="card-front">
+
+          <div class="pcard reveal" data-pc="django fullstack">
+            <div class="pimg">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQot6TlNJU_KdNHQQWW-Rci4vpN61cQ1v09Ng&usqp=CAU"
-                alt=""
+                src="https://media.istockphoto.com/id/2020715428/photo/books.jpg?s=612x612&w=0&k=20&c=o8R9XFXGvItSpDEikvACtb1-WPNW-OyignUMVJSKOUw="
+                alt="Bookstore"
               />
-              <i>Speack to text</i>
+              <div class="pimg-ov"></div>
             </div>
-            <div class="card-back">
-              <h3>
-                <a href="#" style="text-decoration: none; color: white"
-                  >speck to text</a
-                >
-              </h3>
+            <div class="ptags">
+              <span class="ptag">Django</span
+              ><span class="ptag">Full-Stack</span>
+            </div>
+            <div class="pbody">
+              <div class="ptitle">Online Book Store</div>
+              <p class="pdesc">
+                E-commerce book store with shopping cart, order management, user
+                authentication, admin panel and payment gateway integration.
+              </p>
+              <div class="pfoot">
+                <div class="ptech">
+                  <span class="pt">Django</span><span class="pt">MySQL</span
+                  ><span class="pt">Bootstrap</span>
+                </div>
+                <div class="plinks">
+                  <a href="#" class="plink"><i class="bi bi-github"></i></a
+                  ><a href="#" class="plink"
+                    ><i class="bi bi-box-arrow-up-right"></i
+                  ></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Repeat similar structure for other cards -->
-        <div class="card1">
-          <div class="card-inner">
-            <div class="card-front">
+
+          <div class="pcard reveal" data-pc="frontend">
+            <div class="pimg">
               <img
                 src="https://t3.ftcdn.net/jpg/03/01/43/92/360_F_301439209_vpF837oCGM1lp0cnC7stzCBn3th0dQ6O.jpg"
-                alt=""
+                alt="Music"
               />
-              <i>Music player</i>
+              <div class="pimg-ov"></div>
             </div>
-            <div class="card-back">
-              <h3>
-                <a href="#" style="text-decoration: none; color: white"
-                  >Music player</a
-                >
-              </h3>
+            <div class="ptags"><span class="ptag">Frontend</span></div>
+            <div class="pbody">
+              <div class="ptitle">Web Music Player</div>
+              <p class="pdesc">
+                Custom web-based music player with playlist support, seek
+                control, volume, album art display and keyboard shortcuts.
+              </p>
+              <div class="pfoot">
+                <div class="ptech">
+                  <span class="pt">HTML</span><span class="pt">CSS</span
+                  ><span class="pt">JS</span>
+                </div>
+                <div class="plinks">
+                  <a href="#" class="plink"><i class="bi bi-github"></i></a
+                  ><a href="#" class="plink"
+                    ><i class="bi bi-box-arrow-up-right"></i
+                  ></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Repeat similar structure for other cards -->
-        <div class="card1">
-          <div class="card-inner">
-            <div class="card-front">
+
+          <div class="pcard reveal" data-pc="frontend">
+            <div class="pimg">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQot6TlNJU_KdNHQQWW-Rci4vpN61cQ1v09Ng&usqp=CAU"
+                alt="Speech"
+              />
+              <div class="pimg-ov"></div>
+            </div>
+            <div class="ptags"><span class="ptag">Frontend</span></div>
+            <div class="pbody">
+              <div class="ptitle">Speech to Text App</div>
+              <p class="pdesc">
+                Real-time speech recognition using Web Speech API — converts
+                voice to editable text with copy and download options.
+              </p>
+              <div class="pfoot">
+                <div class="ptech">
+                  <span class="pt">JS</span
+                  ><span class="pt">Web Speech API</span
+                  ><span class="pt">CSS</span>
+                </div>
+                <div class="plinks">
+                  <a href="#" class="plink"><i class="bi bi-github"></i></a
+                  ><a href="#" class="plink"
+                    ><i class="bi bi-box-arrow-up-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pcard reveal" data-pc="django api">
+            <div class="pimg">
               <img
                 src="https://www.eklavvya.com/blog/wp-content/uploads/2022/04/Question-Paper-Generation-Software-and-technology.png"
-                alt=""
-              /><i>Question paper</i>
+                alt="QP"
+              />
+              <div class="pimg-ov"></div>
             </div>
-            <div class="card-back">
-              <h3>
-                <a href="#" style="text-decoration: none; color: white"
-                  >Question paper</a
-                >
-              </h3>
-            </div>
-          </div>
-        </div>
-        <!-- Repeat similar structure for other cards -->
-        <div class="card1">
-          <div class="card-inner">
-            <div class="card-front">
-              <img
-                src="https://images.tute.io/media/topics/thumbnails/django-rest-framework-892.png"
-                alt=""
-               
-              /><i>Rest api</i>
-            </div>
-            <div class="card-back">
-              <h3>
-                <a href="#" style="text-decoration: none; color: white"
-                  >Crud api</a
-                >
-              </h3>
-            </div>
-          </div>
-        </div>
-        <!-- Repeat similar structure for other cards -->
-      </div>
-    </div>
-    <!-- contact us section starts  -->
-    <section class="contact container" id="contact">
-      <h2
-        class="contactTitle text-center"
-        style="font-weight: 900; color: rgb(158, 122, 25)"
-      >
-        Contact Me
-      </h2>
-      <div class="contactUs">
-        <div class="contact-box">
-          <div class="left contactLeft">
-            <img
-              src="contact-img.jpeg"
-              class="contact-img"
-              alt=""
-              width="150px "
-            />
-
-            <div class="contact-info">
-              <p><i class="bi bi-telephone-fill"></i> +91-7024094276</p>
-              <p>
-                <i class="bi bi-envelope-fill"> </i>pradeepsingh42211@gmail.com
+            <div class="ptags"><span class="ptag">Django</span></div>
+            <div class="pbody">
+              <div class="ptitle">Question Paper Generator</div>
+              <p class="pdesc">
+                Automated question paper generation system with topic filtering,
+                difficulty levels, marks distribution and PDF export.
               </p>
-              <p><i class="bi bi-geo-alt-fill"></i> Rewa(M.P), India</p>
+              <div class="pfoot">
+                <div class="ptech">
+                  <span class="pt">Django</span><span class="pt">MySQL</span
+                  ><span class="pt">PDF</span>
+                </div>
+                <div class="plinks">
+                  <a href="#" class="plink"><i class="bi bi-github"></i></a
+                  ><a href="#" class="plink"
+                    ><i class="bi bi-box-arrow-up-right"></i
+                  ></a>
+                </div>
+              </div>
             </div>
-            <span class="p-2">
-              If you have any queries at all, please feel free to reach out and
-              I'll gladly answer them.
-            </span>
-
-            <p class="contact-content">Thanks for visiting .</p>
           </div>
-          <div class="right contactRight">
-            <h2 class="contacth2">Lets Connect</h2>
-            <!--<form
-              id="form"
-              method="POST"
-              action="https://formspree.io/f/mqazvvpj"
-          > -->
-            <form action="https://api.web3forms.com/submit" method="post">
+        </div>
+        <div style="text-align: center; margin-top: 44px" class="reveal">
+          <a
+            href="https://github.com/pradeepsingh7024"
+            target="_blank"
+            class="btn btn-sec"
+            ><i class="bi bi-github"></i>View All on GitHub</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SERVICES ====== -->
+    <section id="services">
+      <div class="sec-inner">
+        <div class="reveal">
+          <div class="sec-eyebrow">What I Offer</div>
+          <h2 class="sec-title">My <span>Services</span></h2>
+          <p class="sec-sub">
+            Professional development services to bring your ideas to life.
+          </p>
+        </div>
+        <div class="svc-grid">
+          <div class="svc reveal">
+            <div class="svc-ico"><i class="bi bi-server"></i></div>
+            <div class="svc-title">Backend Development</div>
+            <p class="svc-desc">
+              Building robust, scalable backend systems using Python and Django
+              with clean architecture and best practices.
+            </p>
+            <ul class="svc-ul">
+              <li>Django &amp; Django REST Framework</li>
+              <li>REST API Design &amp; Development</li>
+              <li>JWT Authentication &amp; Authorization</li>
+              <li>Database Design &amp; Optimization</li>
+            </ul>
+          </div>
+          <div class="svc reveal">
+            <div class="svc-ico"><i class="bi bi-code-slash"></i></div>
+            <div class="svc-title">Full-Stack Web Apps</div>
+            <p class="svc-desc">
+              End-to-end web application development from database to frontend
+              with modern technologies.
+            </p>
+            <ul class="svc-ul">
+              <li>Django + React.js Integration</li>
+              <li>Responsive UI with Bootstrap/CSS</li>
+              <li>Database-driven Dynamic Sites</li>
+              <li>User Authentication Systems</li>
+            </ul>
+          </div>
+          <div class="svc reveal">
+            <div class="svc-ico"><i class="bi bi-puzzle"></i></div>
+            <div class="svc-title">API Development</div>
+            <p class="svc-desc">
+              Designing and building RESTful APIs that are secure,
+              well-documented, and easy to integrate.
+            </p>
+            <ul class="svc-ul">
+              <li>RESTful API Architecture</li>
+              <li>API Documentation (Swagger)</li>
+              <li>Third-party API Integration</li>
+              <li>API Security &amp; Rate Limiting</li>
+            </ul>
+          </div>
+          <div class="svc reveal">
+            <div class="svc-ico"><i class="bi bi-database"></i></div>
+            <div class="svc-title">Database Management</div>
+            <p class="svc-desc">
+              Designing efficient database schemas, writing optimized queries
+              and managing data integrity.
+            </p>
+            <ul class="svc-ul">
+              <li>MySQL &amp; SQLite Schema Design</li>
+              <li>Django ORM Optimization</li>
+              <li>Data Migration &amp; Management</li>
+              <li>Query Performance Tuning</li>
+            </ul>
+          </div>
+          <div class="svc reveal">
+            <div class="svc-ico"><i class="bi bi-phone"></i></div>
+            <div class="svc-title">Responsive Web Design</div>
+            <p class="svc-desc">
+              Creating beautiful, mobile-first user interfaces that look great
+              on all devices.
+            </p>
+            <ul class="svc-ul">
+              <li>Mobile-First Development</li>
+              <li>CSS Animations &amp; Transitions</li>
+              <li>Bootstrap Framework</li>
+              <li>Cross-browser Compatibility</li>
+            </ul>
+          </div>
+          <div class="svc reveal">
+            <div class="svc-ico"><i class="bi bi-shield-check"></i></div>
+            <div class="svc-title">Code Review &amp; Optimization</div>
+            <p class="svc-desc">
+              Reviewing existing codebases, identifying bottlenecks and
+              improving performance and maintainability.
+            </p>
+            <ul class="svc-ul">
+              <li>Code Quality Review</li>
+              <li>Performance Optimization</li>
+              <li>Security Best Practices</li>
+              <li>Refactoring &amp; Clean Code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CERTIFICATIONS ====== -->
+    <section id="certifications">
+      <div class="sec-inner">
+        <div class="reveal">
+          <div class="sec-eyebrow">Credentials</div>
+          <h2 class="sec-title">
+            Certifications &amp; <span>Achievements</span>
+          </h2>
+          <p class="sec-sub">
+            Professional certifications and learning achievements that validate
+            my expertise.
+          </p>
+        </div>
+        <div class="cert-grid">
+          <div class="cert reveal">
+            <div class="cert-ico"><i class="fab fa-python"></i></div>
+            <div>
+              <div class="cert-title">Python Programming Certification</div>
+              <div class="cert-by">NPTEL / Online Platform</div>
+              <div class="cert-date">2022</div>
+              <div class="cert-v">
+                <i class="bi bi-patch-check-fill"></i>Verified
+              </div>
+            </div>
+          </div>
+          <div class="cert reveal">
+            <div class="cert-ico"><i class="fas fa-database"></i></div>
+            <div>
+              <div class="cert-title">SQL &amp; Database Management</div>
+              <div class="cert-by">HackerRank</div>
+              <div class="cert-date">2022</div>
+              <div class="cert-v">
+                <i class="bi bi-patch-check-fill"></i>Verified
+              </div>
+            </div>
+          </div>
+          <div class="cert reveal">
+            <div class="cert-ico"><i class="fab fa-js"></i></div>
+            <div>
+              <div class="cert-title">JavaScript Fundamentals</div>
+              <div class="cert-by">freeCodeCamp</div>
+              <div class="cert-date">2021</div>
+              <div class="cert-v">
+                <i class="bi bi-patch-check-fill"></i>Verified
+              </div>
+            </div>
+          </div>
+          <div class="cert reveal">
+            <div class="cert-ico"><i class="fas fa-code-branch"></i></div>
+            <div>
+              <div class="cert-title">Git &amp; Version Control</div>
+              <div class="cert-by">Atlassian / Coursera</div>
+              <div class="cert-date">2021</div>
+              <div class="cert-v">
+                <i class="bi bi-patch-check-fill"></i>Verified
+              </div>
+            </div>
+          </div>
+          <div class="cert reveal">
+            <div class="cert-ico"><i class="fas fa-globe"></i></div>
+            <div>
+              <div class="cert-title">Web Development Bootcamp</div>
+              <div class="cert-by">Udemy</div>
+              <div class="cert-date">2020</div>
+              <div class="cert-v">
+                <i class="bi bi-patch-check-fill"></i>Verified
+              </div>
+            </div>
+          </div>
+          <div class="cert reveal">
+            <div class="cert-ico"><i class="fas fa-briefcase"></i></div>
+            <div>
+              <div class="cert-title">Django Internship Certificate</div>
+              <div class="cert-by">Ideal IT Techno, Indore</div>
+              <div class="cert-date">Mar 2025</div>
+              <div class="cert-v">
+                <i class="bi bi-patch-check-fill"></i>Verified
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== TESTIMONIALS ====== -->
+    <section id="testimonials">
+      <div class="sec-inner">
+        <div class="reveal">
+          <div class="sec-eyebrow">Social Proof</div>
+          <h2 class="sec-title">What They <span>Say</span></h2>
+          <p class="sec-sub">
+            Feedback from colleagues and mentors who have worked with me.
+          </p>
+        </div>
+        <div class="test-grid">
+          <div class="tcard reveal">
+            <div class="t-quote">"</div>
+            <div class="t-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+              ><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="t-text">
+              Pradeep demonstrated exceptional Django skills during his
+              internship. His understanding of REST APIs and clean code
+              practices made him a valuable team member. Highly recommended for
+              backend roles.
+            </p>
+            <div class="t-author">
+              <div class="t-av">ST</div>
+              <div>
+                <div class="t-name">Senior Tech Lead</div>
+                <div class="t-role">Ideal IT Techno, Indore</div>
+              </div>
+            </div>
+          </div>
+          <div class="tcard reveal">
+            <div class="t-quote">"</div>
+            <div class="t-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+              ><i class="bi bi-star-half"></i>
+            </div>
+            <p class="t-text">
+              A dedicated developer who quickly adapts to new challenges.
+              Pradeep's problem-solving ability and willingness to learn make
+              him stand out. His work on API integration was impressive.
+            </p>
+            <div class="t-author">
+              <div class="t-av">PM</div>
+              <div>
+                <div class="t-name">Project Manager</div>
+                <div class="t-role">Web Development Firm</div>
+              </div>
+            </div>
+          </div>
+          <div class="tcard reveal">
+            <div class="t-quote">"</div>
+            <div class="t-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+              ><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="t-text">
+              Pradeep has a strong grasp of both backend and frontend
+              technologies. He delivered the project on time, with clean and
+              well-documented code. A true professional and great communicator.
+            </p>
+            <div class="t-author">
+              <div class="t-av">RC</div>
+              <div>
+                <div class="t-name">Project Mentor</div>
+                <div class="t-role">Sage University, Indore</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section id="contact" style="background: var(--bg2)">
+      <div class="sec-inner">
+        <div class="reveal" style="text-align: center">
+          <div class="sec-eyebrow" style="justify-content: center">
+            Get In Touch
+          </div>
+          <h2 class="sec-title">Let's <span>Connect</span></h2>
+          <p class="sec-sub" style="margin: 0 auto 50px">
+            Have a project, an opportunity, or just want to say hello? I'd love
+            to hear from you.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <div class="cl reveal up">
+            <h3>
+              Let's build something
+              <span style="color: var(--lime)">amazing</span> together.
+            </h3>
+            <p>
+              I'm currently open to full-time opportunities, freelance projects
+              and collaborations. Let's talk about how I can contribute to your
+              team or project.
+            </p>
+            <div class="ci">
+              <div class="ci-row">
+                <div class="ci-ico"><i class="bi bi-telephone-fill"></i></div>
+                <div>
+                  <div class="ci-label">Phone</div>
+                  <div class="ci-val">+91-7024094276</div>
+                </div>
+              </div>
+              <div class="ci-row">
+                <div class="ci-ico"><i class="bi bi-envelope-fill"></i></div>
+                <div>
+                  <div class="ci-label">Email</div>
+                  <div class="ci-val">pradeepsingh7024@gmail.com</div>
+                </div>
+              </div>
+              <div class="ci-row">
+                <div class="ci-ico"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <div class="ci-label">Location</div>
+                  <div class="ci-val">Rewa, Madhya Pradesh, India</div>
+                </div>
+              </div>
+              <div class="ci-row">
+                <div class="ci-ico"><i class="bi bi-clock-fill"></i></div>
+                <div>
+                  <div class="ci-label">Availability</div>
+                  <div class="ci-val">Mon–Sat, 9AM–7PM IST</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-socs">
+              <a
+                class="c-soc"
+                href="https://github.com/pradeepsingh7024"
+                target="_blank"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a
+                class="c-soc"
+                href="https://www.linkedin.com/in/pradeep-singh-51a21a236"
+                target="_blank"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a
+                class="c-soc"
+                href="https://instagram.com/tpsrr__"
+                target="_blank"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a class="c-soc" href="#"><i class="bi bi-whatsapp"></i></a>
+              <a class="c-soc" href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+          <div class="cform reveal right">
+            <h3>Send a Message</h3>
+            <form
+              id="cf"
+              action="https://api.web3forms.com/submit"
+              method="post"
+            >
               <input
                 type="hidden"
                 name="access_key"
-                id=""
                 value="6bf9b41b-217a-417d-ba43-34195761d765"
               />
-              <input
-                type="text"
-                class="field contactField"
-                name="name"
-                placeholder="Enter your Full Name"
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                class="field contactField"
-                placeholder="Enter your Email"
-                required
-              />
-              <input
-                type="text"
-                class="field contactField"
-                name="contact"
-                placeholder="Enter your Phone Number"
-              />
-              <textarea
-                name="msg"
-                placeholder="Suggestions/Queries"
-                class="field contactField contactTextarea"
-                required
-              ></textarea>
-              <button id="form-button" class="btn contactBtn" type="submit">
-                Send
+              <div class="frow">
+                <div class="fg">
+                  <label class="flabel">First Name</label
+                  ><input
+                    type="text"
+                    class="fi"
+                    name="firstname"
+                    placeholder="Pradeep"
+                    required
+                  />
+                </div>
+                <div class="fg">
+                  <label class="flabel">Last Name</label
+                  ><input
+                    type="text"
+                    class="fi"
+                    name="lastname"
+                    placeholder="Singh"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="fg">
+                <label class="flabel">Email Address</label
+                ><input
+                  type="email"
+                  class="fi"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <div class="fg">
+                <label class="flabel">Phone (Optional)</label
+                ><input
+                  type="text"
+                  class="fi"
+                  name="phone"
+                  placeholder="+91 XXXXXXXXXX"
+                />
+              </div>
+              <div class="fg">
+                <label class="flabel">Subject</label>
+                <select class="fi" name="subject">
+                  <option value="">Select a subject</option>
+                  <option>Full-time Job Opportunity</option>
+                  <option>Freelance Project</option>
+                  <option>Collaboration</option>
+                  <option>Internship</option>
+                  <option>Just saying Hi!</option>
+                </select>
+              </div>
+              <div class="fg">
+                <label class="flabel">Message</label
+                ><textarea
+                  class="fi"
+                  name="message"
+                  placeholder="Tell me about your project..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="fsubmit">
+                <i class="bi bi-send-fill"></i>Send Message
               </button>
             </form>
           </div>
         </div>
       </div>
     </section>
-    <!-- contact section ends -->
 
-    <footer class="footer">
-      <div class="text-center">
-        <!-- Footer Title -->
-        <div class="col-12 mb-3">
-          <h3 class="mb-2">
-            Designed and Developed by <strong>Pradeep Singh</strong>
-          </h3>
-          <p>&copy; 2023</p>
-        </div>
-
-        <!-- Contact Info -->
-        <div class="col-12 mb-3">
-          <p>
-            Contact:
-            <a href="mailto:pradeepsingh42211@gmail.com" class="text-dark"
-              >pradeepsingh42211@gmail.com</a
-            >
-          </p>
-        </div>
-
-        <!-- Social Media Icons -->
-        <div class="col-12">
-          <div class="social-icons d-flex justify-content-center">
-            <a
-              href="https://github.com/Rakselsaheb"
-              target="_blank"
-              class="text-light mx-2"
-            >
-              <i class="bi bi-github" style="font-size: 30px"></i>
-            </a>
-            <a
-              href="https://twitter.com/explore"
-              target="_blank"
-              class="text-light mx-2"
-            >
-              <i class="bi bi-twitter" style="font-size: 30px"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/pradeep-singh-51a21a236"
-              target="_blank"
-              class="text-light mx-2"
-            >
-              <i class="bi bi-linkedin" style="font-size: 30px"></i>
-            </a>
-            <a
-              href="https://instagram.com/tpsrr__?igshid=ZGUzMzM3NWJiOQ=="
-              target="_blank"
-              class="mx-2"
-            >
-              <i class="bi bi-instagram" style="font-size: 30px"></i>
-            </a>
-            <a href="#" class="mx-2">
-              <i class="bi bi-whatsapp" style="font-size: 30px"></i>
-            </a>
-            <a href="#" class="text-light mx-2">
-              <i class="bi bi-youtube" style="font-size: 30px"></i>
-            </a>
+    <!-- ====== FOOTER ====== -->
+    <footer>
+      <div class="ft-inner">
+        <div class="ft-top">
+          <div class="ft-about">
+            <a href="#home" class="nav-logo">TPSRR__</a>
+            <p>
+              Full-Stack Python Developer specializing in Django, REST APIs, and
+              scalable web applications. Open to new opportunities.
+            </p>
+            <div class="ft-socs">
+              <a
+                class="ft-soc"
+                href="https://github.com/pradeepsingh7024"
+                target="_blank"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a
+                class="ft-soc"
+                href="https://www.linkedin.com/in/pradeep-singh-51a21a236"
+                target="_blank"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a
+                class="ft-soc"
+                href="https://instagram.com/tpsrr__"
+                target="_blank"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a class="ft-soc" href="https://wa.me/91XXXXXXXXXX?text=Hello%20I%20want%20to%20contact%20you"><i class="bi bi-whatsapp"></i></a>
+              <a class="ft-soc" href="https://twitter.com/tpsrr__/tweet?text=Check%20out%20my%20portfolio%20website"><i class="bi bi-twitter-x"></i></a>
+            </div>
           </div>
+          <div class="ft-col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skill">Skills</a></li>
+              <li><a href="#Education">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+          </div>
+          <div class="ft-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Backend Dev</a></li>
+              <li><a href="#services">API Development</a></li>
+              <li><a href="#services">Full-Stack Apps</a></li>
+              <li><a href="#services">Database Design</a></li>
+              <li><a href="#services">Code Review</a></li>
+            </ul>
+          </div>
+          <div class="ft-col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="mailto:pradeepsingh42211@gmail.com">Gmail</a></li>
+              <li>
+                <a href="https://github.com/pradeepsingh7024" target="_blank"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/pradeep-singh-51a21a236"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li><a href="pradeep-singh.pdf" download>Download CV</a></li>
+              <li><a href="#contact">Send Message</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="ft-bot">
+          <p>
+            © 2023 Designed &amp; Developed with ❤️ by
+            <strong>Pradeep Singh</strong>
+          </p>
+          <p
+            style="
+              font-family: &quot;JetBrains Mono&quot;, monospace;
+              font-size: 0.72rem;
+              opacity: 0.4;
+            "
+          >
+            // Built with HTML · CSS · JavaScript
+          </p>
         </div>
       </div>
     </footer>
 
-    <!-- Bootstrap Icons CDN (if not included already) -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-  </body>
-  <script>
-    var app = document.getElementById("app");
-
-    var customNodeCreator = function (character) {
-      return document.createTextNode(character);
-    };
-
-    var typewriter = new Typewriter(app, {
-      loop: true,
-      delay: 75,
-      onCreateTextNode: customNodeCreator,
-    });
-
-    typewriter.typeString(" Full-Stack Python Developer").pauseFor(300).start();
-
-    // special effect
-    function fire() {
-      const end = Date.now() + 15 * 1000;
-
-      // go Buckeyes!
-      const colors = ["#bb0000", "#ffffff"];
-
-      (function frame() {
-        confetti({
-          particleCount: 2,
-          angle: 60,
-          spread: 55,
-          origin: { x: 0 },
-          colors: colors,
-        });
-
-        confetti({
-          particleCount: 2,
-          angle: 120,
-          spread: 55,
-          origin: { x: 1 },
-          colors: colors,
-        });
-
-        if (Date.now() < end) {
-          requestAnimationFrame(frame);
-        }
-      })();
-    }
-    // //date functon
-    // let d=new Date();
-    // let date=document.getElementsByClassName("date");
-    // let s= date.innerText=d.getDay()+"-"+d.getMonth()+"-"+d.getFullYear();
-    // console.log(d.getDate());
-    // console.log(d.getMonth());
-    // console.log(d.getFullYear());
-    // console.log(s)
-  </script>
-  <!-- back to top javascripts-->
-  <script>
-    window.onscroll = function () {
-      var backToTopButton = document.getElementById("backToTop");
-      if (
-        document.body.scrollTop > 100 ||
-        document.documentElement.scrollTop > 100
-      ) {
-        backToTopButton.style.display = "block";
-      } else {
-        backToTopButton.style.display = "none";
-      }
-    };
-
-    // Scroll to top when the button is clicked
-    document
-      .getElementById("backToTop")
-      .addEventListener("click", function (event) {
-        event.preventDefault();
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ====== SCRIPTS ====== -->
+     <script src="scripts.js"></script>
+     </body>
 </html>
-
